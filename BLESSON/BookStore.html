@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Bookstore Survey</title>
+</head>
+<body>
 
+    <h1>School Bookstore Survey</h1>
+    <p>Please complete this survey to help us understand your book-buying habits.</p>
+
+    <form action="#" method="post">
+        
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="zip">ZIP Code:</label><br>
+            <input type="text" id="zip" name="zip" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Survey Questions -->
+        <fieldset>
+            <legend>Book-Buying Habits</legend>
+
+            <p>1. Where do you primarily purchase your books? (Select all that apply)</p>
+            <input type="checkbox" id="school_bookstore" name="purchase_location" value="School Bookstore">
+            <label for="school_bookstore">School Bookstore</label><br>
+            <input type="checkbox" id="online" name="purchase_location" value="Online Stores (Amazon, etc.)">
+            <label for="online">Online Retailers</label><br>
+            <input type="checkbox" id="local_bookstore" name="purchase_location" value="Local Bookstore">
+            <label for="local_bookstore">Local Bookstore</label><br>
+            <input type="checkbox" id="used_books" name="purchase_location" value="Used / Secondhand">
+            <label for="used_books">Used / Secondhand Shops</label><br>
+            <input type="checkbox" id="other_loc" name="purchase_location" value="Other">
+            <label for="other_loc">Other</label><br><br>
+
+            <p>2. Preferred format for course materials:</p>
+            <input type="radio" id="physical" name="preferred_format" value="Physical Printed Book" required>
+            <label for="physical">Physical Printed Book</label><br>
+            <input type="radio" id="ebook" name="preferred_format" value="E-Book / Digital">
+            <label for="ebook">E-Book / Digital</label><br>
+            <input type="radio" id="rental" name="preferred_format" value="Book Rental">
+            <label for="rental">Book Rental</label><br><br>
+
+            <label for="comments">3. Additional Comments / Feedback:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Let us know how we can improve..."></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Survey">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
